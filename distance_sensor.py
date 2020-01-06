@@ -11,7 +11,7 @@ GPIO.setup(echo, GPIO.IN)
 
 GPIO.output(trig, True)
 time.sleep(0.0001)
-GPIO.outpout(trig, False)
+GPIO.output(trig, False)
 
 while GPIO.input(echo) == False:
     start = time.time()
